@@ -30,7 +30,7 @@ class App extends Component {
           <h1 className="App-title">Anton Emery - Code Audition</h1>
         </header>
         <div className="content">
-          <input type="text" name="filter" value={this.state.value} onChange={this.handleChange} />
+          <input type="text" name="filter" value={this.state.value} onChange={this.handleChange} placeholder="Search for classes" />
           <Classes classes={mock_data} searchTerm={this.state.filterTerm} />
         </div>
       </div>
