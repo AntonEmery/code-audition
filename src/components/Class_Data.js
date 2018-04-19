@@ -1,19 +1,19 @@
 import React from 'react';
 
-function ClassData(props) {
+function ClassData({title, category, date, schedule}) {
   return (
     <tr>
       <td>
-        {props.title}
+        {title}
       </td>
       <td>
-        {props.category}
+        {category}
       </td>
       <td>
-        {props.date}
+        {date}
       </td>
       <td>
-        {props.schedule}
+        {schedule}
       </td>
     </tr>
   );

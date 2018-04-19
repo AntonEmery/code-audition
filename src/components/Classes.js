@@ -3,9 +3,6 @@ import ClassData from './Class_Data';
 
 class Classes extends Component {
 
-  componentDidUpdate() {
-  }
-
   render() {
     const filtered_results = this.props.classes.filter(item => {
       for (var key in item) {
@@ -13,6 +10,7 @@ class Classes extends Component {
           return true;
         }
       }
+      return false
     })
     const classes = filtered_results.map((singleClass, index) => {
      return <ClassData
