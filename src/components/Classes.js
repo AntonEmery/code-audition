@@ -4,18 +4,17 @@ import ClassData from './Class_Data';
 class Classes extends Component {
 
   componentDidUpdate() {
-    console.log('component did update')
   }
 
   render() {
     const filtered_results = this.props.classes.filter(item => {
-
       for (var key in item) {
-        return (item[key].includes(this.props.searchTerm))
+        if (item[key].includes(this.props.searchTerm)) {
+          return true;
+        }
       }
     })
-    console.log(filtered_results)
-    const classes = this.props.classes.map((singleClass, index) => {
+    const classes = filtered_results.map((singleClass, index) => {
      return <ClassData
         key={index}
         title={singleClass.title}
