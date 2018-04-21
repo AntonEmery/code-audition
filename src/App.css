@@ -51,3 +51,8 @@ input {
   border: 1px solid #ddd;
   margin-bottom: 12px;
 }
+
+.class-image {
+  width: 150px;
+  height: auto;
+}

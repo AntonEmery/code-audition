@@ -19,6 +19,7 @@ class Classes extends Component {
         category={singleClass.category}
         date={singleClass.date}
         schedule={singleClass.schedule}
+        img={singleClass.img}
       />
     })
     if (classes)
@@ -26,6 +27,7 @@ class Classes extends Component {
       <table align="center">
         <thead>
           <tr>
+            <th>Image</th>
             <th>Class Title</th>
             <th>Category</th>
             <th>Date Range</th>
