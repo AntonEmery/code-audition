@@ -24,6 +24,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Anton Emery - Code Audition</h1>
+          <h1><a href="https://github.com/AntonEmery/code-audition" target="_blank">Github Repo</a></h1>
         </header>
         <div className="content">
           <p>Search by level. (Beginner, Int, Adv), Date, Class, or Cateogory</p>
