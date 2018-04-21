@@ -27,7 +27,7 @@ class App extends Component {
           <h1><a href="https://github.com/AntonEmery/code-audition" target="_blank">Github Repo</a></h1>
         </header>
         <div className="content">
-          <p>Search by level. (Beginner, Int, Adv), Date, Class, or Cateogory</p>
+          <p>Search by level. (Beginner, Int, Adv), Date, Class, Cateogory, or Schedule</p>
           <input type="text" name="filter" value={this.state.value} onChange={this.handleChange} placeholder="Search for classes" />
           <Classes classes={mock_data} searchTerm={this.state.filterTerm} />
         </div>
